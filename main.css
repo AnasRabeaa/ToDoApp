@@ -65,10 +65,11 @@ body {
 }
 
 .tasks .task.done {
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
-.tasks .task span {
+.tasks .task span,
+#del-all {
     font-weight: bold;
     font-size: 10px;
     background-color: red;
@@ -76,4 +77,11 @@ body {
     padding: 2px 6px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+#del-all {
+    border: none;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
 }
